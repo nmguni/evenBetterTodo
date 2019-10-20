@@ -29,7 +29,40 @@ body {
 .active-list {
   font-weight: 700;
 }
-// .all-tasks {
-// }
-// .todo-list {
-// }
+
+.btn {
+  cursor: pointer;
+  background: 0;
+  border: 0;
+  padding: 0;
+  color: inherit;
+}
+.btn.list {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-right: 0.25em;
+  transition: opacity 250ms ease-in;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.new {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  border-bottom: 1px solid #000;
+  font-size: inherit;
+  outline: none;
+  transition: border-bottom 150ms ease-in;
+  .list {
+    font-size: 1.1em;
+  }
+}
+
+.new:focus {
+  border-bottom-width: 3px;
+}
+.new:focus::placeholder {
+  opacity: 0.2;
+}
