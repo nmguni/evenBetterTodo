@@ -1,0 +1,38 @@
+.continer {
+  padding: 0 8% 0 8%;
+}
+
+.list_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#title {
+  margin: 0;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+body {
+  margin: 0;
+  font-family: "work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  background-color: #f4f4f4;
+}
+
+.task-list {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  list-style: circle;
+  padding-left: 1.1em;
+}
+
+.active-list {
+  font-weight: 700;
+}
+/*# sourceMappingURL=main.css.map */

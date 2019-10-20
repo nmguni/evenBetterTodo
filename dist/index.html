@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="continer"> 
+
+  <h1 id="title">Make a list</h1>
+  <div class="list_grid"> 
+  <section class="list-area">
+    <div class="all-tasks">
+      <h2 class="task-list-title">To-Do</h2>
+      <ul class="task-list">
+        <li class="active-list">work</li>
+        <li>youtube</li>
+        <li>stuff</li>
+      </ul>
+      <!-- input -->
+      <form action="">
+        <input type="text" placeholder="new lst name" class="new list" aria-label="new list name" />
+        <button class="btn list" aria-label="create new list">+</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- note taking -->
+  <div class="all-notes">
+    <h2 class="task-list-title">Take a Note</h2>
+    <ul class="task-list">
+      <li class="active-list">other</li>
+      <li>facebook</li>
+      <li>tings</li>
+    </ul>
+    <!-- note input -->
+    <form action="">
+      <input type="text" placeholder="new lst name" class="new list" aria-label="new list name" />
+      <button class="btn list" aria-label="create new list">+</button>
+    </form>
+  </div>
+</div>
+<hr>
+  <div class="todo-list">
+    <div class="todo-header">
+      <h2 class="list-title">you tube</h2>
+      <p class="taskcount">3 tasks remaingin</p>
+    </div>
+
+    <div class="todo-body">
+      <div class="tasks">
+        <div class="task">
+          <input id="task-1" type="checkbox" />
+          <label for="task-1">
+            <span class="custom-checkbox"></span>
+            recode to do list video
+          </label>
+        </div>
+        <!-- /task 1 -->
+        <div class="tasks">
+          <div class="task">
+            <input id="task-2" type="checkbox" />
+            <label for="task-2">
+              <span class="custom-checkbox"></span>
+              recode to do list video
+            </label>
+          </div>
+          <!-- task 2 -->
+          <div class="tasks">
+            <div class="task">
+              <input id="task-3" type="checkbox" />
+              <label for="task-3">
+                <span class="custom-checkbox"></span>
+                recode to do list video
+              </label>
+            </div>
+           
+            </div>
+            <div class="new-taks-creator"
+            >
+            <form action="">
+                <input type="text" 
+                placeholder="new task name" 
+                class="new list" 
+                aria-label="new taks name" />
+                <button class="btn task" aria-label="create new taks">+</button>
+              </form>
+          </div>
+            <div class="delete-stuff">
+              <button class="btn delete" >clear completed task</button>
+              <button class="btn delete">delete list</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+        <!-- script -->
+        <script src="/app.js"></script>
+</body>
+
+</html>
