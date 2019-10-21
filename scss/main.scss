@@ -2,22 +2,31 @@
   padding: 0 8% 0 8%;
 }
 .list_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-#title {
-  margin: 0;
-  letter-spacing: 0.5rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2rem;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 body {
   margin: 0;
-  font-family: "work Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
   font-weight: 300;
   font-size: 1.2rem;
-  background-color: #f4f4f4;
+  // background-color: #f4f4f4;
+  color: rgba(22, 22, 22, 0.7);
+}
+hr {
+  border: maroon solid 1px;
+}
+#title {
+  margin: 0;
+  letter-spacing: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: maroon;
 }
 
 .task-list {
@@ -66,3 +75,5 @@ body {
 .new:focus::placeholder {
   opacity: 0.2;
 }
+
+/// 31 min https://www.youtube.com/watch?v=IhmSidOJSeE
