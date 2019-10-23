@@ -117,8 +117,9 @@ hr {
 }
 
 .todo-header {
+  border-radius: 4px 4px 0 0;
   padding: var(--spacer);
-  background: maroon;
+  background: rgba(128, 0, 0, 0.74);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,6 +142,8 @@ hr {
 
 .todo-body {
   padding: var(--spacer);
+  color: #000;
+  line-height: 1.8rem;
 }
 
 [type="checkbox"] {
@@ -148,12 +151,72 @@ hr {
   position: absolute;
 }
 
+.task label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.task::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -0.5em;
+  height: 1px;
+  background: maroon;
+  opacity: 0.1;
+}
+
+.task {
+  position: relative;
+  margin-bottom: 1.25em;
+}
+
 .custome-checkbox {
   display: inline-block;
-  width: 0.75em;
-  height: 0.75em;
+  width: 0.65em;
+  height: 0.65em;
   cursor: pointer;
   border: 2px solid #000;
   border-radius: 50%;
+  margin-right: 0.65em;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+.task:hover .custome-checkbox,
+[type="checkbox"]:focus + label .custome-checkbox {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-color: rgba(128, 0, 0, 0.1);
+}
+
+[type="checkbox"]:checked + label .custome-checkbox {
+  background: maroon;
+  border-color: maroon;
+}
+
+[type="checkbox"]:checked + label {
+  opacity: 0.5;
+}
+
+.task label::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: calc(50% - 1.5px);
+  height: 3px;
+  background: black;
 }
 /*# sourceMappingURL=main.css.map */
