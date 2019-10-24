@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css" />
+  <!-- <link rel="stylesheet" href="./css/main.css" /> -->
   <title>Document</title>
 </head>
 <body>
@@ -26,25 +26,30 @@
       <!-- input -->
       <form action="">
         <button class="btn list" aria-label="create new list">+</button>
-        <input type="text" placeholder="New List Name" class="new list" aria-label="new list name" />
-       
+        <input type="text" placeholder="New List Name" class="new list" aria-label="new list name" />     
       </form>
     </div>
   </section>
-
   <!-- note taking -->
   <div class="all-notes">
     <h2 class="task-list-title">Take a Note</h2>
-    <ul class="task-list">
-      <li class="list-name active-list">other</li>
-      <li class="list-name" >facebook</li>
-      <li class="list-name" >tings</li>
-    </ul>
     <!-- note input -->
-    <form action="">
-      <button class="btn list" aria-label="create new list">+</button>
-      <input type="text" placeholder="New Note Name" class="new list" aria-label="new list name" />
-     
+    <form id="noteTaking">
+      <textarea
+        name="formNoteText"
+        id="formNoteText"
+        cols="40"
+        rows="11"
+        maxlength="300"
+      ></textarea>
+      <select name="formColor" id="formColor">
+        <option value="none">Select color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+      </select>
+      <button id="formAddButton">Add note</button>
     </form>
   </div>
 </div>
@@ -90,7 +95,7 @@
                 <button class="btn list" aria-label="create new taks">+</button>
                 <input type="text" 
                 placeholder="new task name" 
-                class="new list" 
+                class="new-list" 
                 aria-label="new taks name" />
                
               </form>

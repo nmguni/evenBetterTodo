@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>test</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="title">LIST / NOTE</h1>
+      <div id="noetListCreation">
+        <div class="createList">
+          <h2 class="task-list-title">Make a list</h2>
+          <ul class="task-list">
+            <li class="list-name  active-list">work</li>
+            <li class="list-name">youtube</li>
+            <li class="list-name">stuff</li>
+          </ul>
+          <!-- input -->
+          <form action="">
+            <button class="btn list" aria-label="create new list">+</button>
+            <input
+              type="text"
+              placeholder="New List Name"
+              class="new list"
+              aria-label="new list name"
+            />
+          </form>
+        </div>
+        <!-- ----------- -->
+        <div class="createNote">
+          <h2>Take A Note</h2>
+          <form id="noteForm">
+            <textarea
+              placeholder="Type Here!"
+              name="formNoteText"
+              id="formNoteText"
+              cols="40"
+              rows="13"
+              maxlength="300"
+            ></textarea>
+            <br />
+            <select name="formColor" id="formColor">
+              <option value="none">Select color</option>
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+              <option value="yellow">Yellow</option>
+            </select>
+            <button id="formAddButton">Add note</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- bottom container -->
+    </div>
+  </body>
+</html>
