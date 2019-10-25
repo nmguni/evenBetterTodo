@@ -247,7 +247,7 @@ body {
   padding: 0;
 }
 #container {
-  background-color: #f4f4f4;
+  // background-color: #f4f4f4;
   height: 100vh;
   margin: 0 10% 0 10%;
   letter-spacing: 0.3em;
@@ -255,6 +255,9 @@ body {
     font-size: 3.5rem;
     text-align: center;
     font-weight: 400;
+    margin: 0 0 1em 0;
+    padding: 5px;
+    color: #414141;
   }
 }
 #noetListCreation {
@@ -264,7 +267,9 @@ body {
   justify-content: space-around;
   h2 {
     font-size: 2.5rem;
-    font-weight: inherit;
+    font-weight: 400;
+    margin: 0;
+    // color: #f4f4f4;
   }
 }
 
@@ -278,12 +283,22 @@ body {
     }
   }
   #formAddButton {
+    cursor: pointer;
     font-size: 1.2rem;
     border: none;
     border-radius: 4px;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    background-color: #26a69a;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    &:hover {
+    }
   }
   #formNoteText {
-    border: 2px solid maroon;
+    border: 2px solid #f4f4f4;
     border-radius: 4px;
     transition: 500ms;
     &:hover {
@@ -296,5 +311,118 @@ body {
 }
 textarea::placeholder {
   font-size: 1.5rem;
-  color: #000;
+  color: rgb(156, 154, 154);
+}
+
+// -------------------------------
+.createList {
+  background-color: #90caf9;
+  text-transform: capitalize;
+  padding: 3rem;
+  border-radius: 4px;
+  color: #414141;
+}
+.createNote {
+  background-color: #e0f2f1;
+  border-radius: 4px;
+  padding: 1rem;
+  color: #414141;
+}
+#noetListCreation {
+  padding-bottom: 3rem;
+  border-bottom: #8b8b8b solid 2px;
+}
+.task-list {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  list-style: circle;
+  padding-left: 1.1em;
+}
+
+.list-name {
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.active-list {
+  font-weight: 700;
+}
+
+.btn {
+  cursor: pointer;
+  background: 0;
+  border: 0;
+  padding: 0;
+  color: inherit;
+}
+.btn.list {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-right: 0.25em;
+  transition: opacity 250ms ease-in;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.new {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  border-bottom: 1px solid #000;
+  font-size: inherit;
+  outline: none;
+  transition: border-bottom 150ms ease-in;
+  .list {
+    font-size: 1.1em;
+  }
+}
+//  note creation
+
+.note {
+  max-width: 25rem;
+  height: 100%;
+  font-size: 1.4rem;
+  background: #fff;
+  border-radius: 0.4rem;
+  padding: 1.2rem 1.6rem;
+  margin: 2.4rem 2.4rem 0 0;
+  box-shadow: 0 0.9rem 1.2rem rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.note span {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 0.2rem;
+  right: 0.2rem;
+  border-radius: 0.4rem;
+  color: #999;
+  text-align: center;
+}
+.note span:hover {
+  color: #333;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+.note-text {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.note::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.8rem;
+  border-radius: 0 0 0.4rem 0.4rem;
+}
+#notes {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
 }
