@@ -12,22 +12,40 @@
       <h1 id="title">LIST / NOTE</h1>
       <div id="noetListCreation">
         <div class="createList">
-          <h2 class="task-list-title">Make a list</h2>
-          <ul class="task-list">
-            <li class="list-name  active-list">work</li>
-            <li class="list-name">youtube</li>
-            <li class="list-name">stuff</li>
+          <!-- <h2>To-Do List</h2> -->
+
+          <p>Add Item</p>
+          <hr />
+          <input class="input" id="new-item" type="text" />
+          <button class="bttn">Add</button>
+          <p>todo</p>
+          <hr />
+          <ul id="incomplete-tasks">
+            <li>
+              <input type="checkbox" /><label>Pay Bills</label
+              ><input class="input" type="text" /><button class="bttn edit">
+                Edit</button
+              ><button class="delete bttn">Delete</button>
+            </li>
+            <li class="editMode">
+              <input type="checkbox" /><label>Go Shopping</label
+              ><input class="input" type="text" value="Go Shopping" /><button
+                class="edit bttn"
+              >
+                Edit</button
+              ><button class="delete bttn">Delete</button>
+            </li>
           </ul>
-          <!-- input -->
-          <form action="">
-            <button class="btn list" aria-label="create new list">+</button>
-            <input
-              type="text"
-              placeholder="New List Name"
-              class="new list"
-              aria-label="new list name"
-            />
-          </form>
+          <p>Completed</p>
+          <hr />
+          <ul id="completed-tasks">
+            <li>
+              <input type="checkbox" checked /><label>See the Doctor</label
+              ><input class="input" type="text" /><button class="edit bttn">
+                Edit</button
+              ><button class="delete bttn">Delete</button>
+            </li>
+          </ul>
         </div>
         <!-- ----------- -->
         <div class="createNote">

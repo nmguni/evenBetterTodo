@@ -246,6 +246,9 @@ body {
   margin: 0;
   padding: 0;
 }
+p {
+  margin-bottom: 0;
+}
 #container {
   // background-color: #f4f4f4;
   height: 100vh;
@@ -260,6 +263,10 @@ body {
     color: #414141;
   }
 }
+hr {
+  border: rgb(156, 156, 156) 0.5px solid;
+}
+
 #noetListCreation {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -294,7 +301,10 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    transition: 500ms;
     &:hover {
+      background-color: #09e4ce;
+      transition: 500ms;
     }
   }
   #formNoteText {
@@ -302,7 +312,7 @@ body {
     border-radius: 4px;
     transition: 500ms;
     &:hover {
-      box-shadow: 1px 2px 10px 3px;
+      box-shadow: 1px 1px 10px 1px rgba(51, 51, 51, 0.568);
       transition: 500ms;
     }
     outline: none;
@@ -317,16 +327,44 @@ textarea::placeholder {
 // -------------------------------
 .createList {
   background-color: #90caf9;
-  text-transform: capitalize;
+  text-transform: uppercase;
   padding: 3rem;
   border-radius: 4px;
   color: #414141;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+    }
+  }
+  .input {
+    border: none;
+    border-radius: 4px;
+    background-color: #daedfd;
+    outline: none;
+    transition: border-bottom 150ms ease-in;
+    font-size: 1.1em;
+    padding: 0.2em;
+  }
+  .bttn {
+    border-radius: 4px;
+    border: 0;
+    padding: 0.5em;
+    letter-spacing: 3px;
+    margin: 0.2em;
+    font-weight: 600;
+    color: #fff;
+    background-color: #44abff;
+  }
 }
+
 .createNote {
   background-color: #e0f2f1;
   border-radius: 4px;
   padding: 1rem;
   color: #414141;
+  display: block;
 }
 #noetListCreation {
   padding-bottom: 3rem;
