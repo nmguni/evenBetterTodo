@@ -118,7 +118,8 @@ textarea::placeholder {
 .createList {
   background-color: #90caf9;
   text-transform: uppercase;
-  padding: 3rem;
+  text-align: center;
+  padding: 1rem 4rem 4rem 4rem;
   border-radius: 4px;
   color: #414141;
 }
@@ -194,31 +195,46 @@ textarea::placeholder {
   color: inherit;
 }
 
-.btn.list {
+.btn {
   font-size: 1.5rem;
-  font-weight: 900;
-  margin-right: 0.25em;
-  -webkit-transition: opacity 250ms ease-in;
-  transition: opacity 250ms ease-in;
-}
-
-.btn.list:hover {
-  opacity: 0.7;
+  color: #fff;
+  background-color: #00bfa5;
+  padding: 0 6px 0 6px;
+  border-radius: 4px;
 }
 
 .new {
-  background: transparent;
+  background: #e3f2fd;
   border: 0;
+  border-radius: 4px;
   color: inherit;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #00bfa5;
   font-size: inherit;
   outline: none;
+  margin-top: 1.5rem;
+  padding: 6px;
   -webkit-transition: border-bottom 150ms ease-in;
   transition: border-bottom 150ms ease-in;
 }
 
-.new .list {
-  font-size: 1.1em;
+.new:focus {
+  border-bottom-width: 3px;
+}
+
+.new:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.new:focus:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.new:focus::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.new:focus::placeholder {
+  opacity: 0.5;
 }
 
 .note {
