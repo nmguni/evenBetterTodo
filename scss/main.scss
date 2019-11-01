@@ -1,40 +1,140 @@
-// .continer {
-//   padding: 0 8% 0 8%;
-// }
-// .list_grid {
-//   // display: grid;
-//   // grid-template-columns: 1fr 1fr;
-//   padding: 20px;
-//   display: flex;
-//   justify-content: space-around;
-// }
 // body {
 //   margin: 0;
-//   font-family: "Roboto", sans-serif;
-//   text-transform: capitalize;
-//   font-weight: 300;
-//   font-size: 1.2rem;
+//   padding: 0;
+// }
+// p {
+//   margin-bottom: 0;
+// }
+// #container {
 //   // background-color: #f4f4f4;
-//   color: rgba(22, 22, 22, 0.7);
+//   height: 100vh;
+//   margin: 0 10% 0 10%;
+//   letter-spacing: 0.3em;
+//   h1 {
+//     font-size: 3.5rem;
+//     text-align: center;
+//     font-weight: 400;
+//     margin: 0 0 0.5em 0;
+//     padding: 5px;
+//     color: #414141;
+//   }
 // }
 // hr {
-//   border: maroon solid 1px;
-// }
-// #title {
-//   margin: 0;
-//   letter-spacing: 0.8rem;
-//   text-align: center;
-//   text-transform: uppercase;
-//   font-size: 2rem;
-//   color: maroon;
+//   border: rgb(156, 156, 156) 0.5px solid;
 // }
 
+// #noetListCreation {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   display: flex;
+//   justify-content: space-around;
+//   h2 {
+//     font-size: 2.5rem;
+//     font-weight: 400;
+//     margin: 0;
+//     // color: #f4f4f4;
+//   }
+// }
+
+// .createNote {
+//   text-align: center;
+//   #formColor {
+//     font-size: 1.2rem;
+//     border: none;
+//     option {
+//       border: none;
+//     }
+//   }
+//   #formAddButton {
+//     cursor: pointer;
+//     font-size: 1.2rem;
+//     border: none;
+//     border-radius: 4px;
+//     margin-top: 0.5em;
+//     padding: 0.5em;
+//     background-color: #73bdfa;
+//     color: #fff;
+//     font-weight: 400;
+//     text-transform: uppercase;
+//     letter-spacing: 0.1em;
+//     transition: 500ms;
+//     &:hover {
+//       background-color: #068efd;
+//       transition: 500ms;
+//     }
+//   }
+
+//   #formNoteText {
+//     border: 2px solid #f4f4f4;
+//     border-radius: 4px;
+//     transition: 500ms;
+//     &:hover {
+//       box-shadow: 1px 1px 10px 1px rgba(51, 51, 51, 0.568);
+//       transition: 500ms;
+//     }
+//     outline: none;
+//     resize: none;
+//   }
+// }
+// textarea::placeholder {
+//   font-size: 1.5rem;
+//   color: rgb(156, 154, 154);
+// }
+
+// // -------------------------------
+// .createList {
+//   background-color: #90caf9;
+//   text-transform: uppercase;
+//   text-align: center;
+//   padding: 1rem 4rem 4rem 4rem;
+//   border-radius: 4px;
+//   color: #414141;
+//   ul {
+//     margin: 0;
+//     padding: 0;
+//     li {
+//       list-style: none;
+//     }
+//   }
+//   .input {
+//     border: none;
+//     border-radius: 4px;
+//     background-color: #daedfd;
+//     outline: none;
+//     transition: border-bottom 150ms ease-in;
+//     font-size: 1.1em;
+//     padding: 0.2em;
+//   }
+//   .bttn {
+//     border-radius: 4px;
+//     border: 0;
+//     padding: 0.5em;
+//     letter-spacing: 3px;
+//     margin: 0.2em;
+//     font-weight: 600;
+//     color: #fff;
+//     background-color: #44abff;
+//   }
+// }
+
+// .createNote {
+//   background-color: #e0f2f1;
+//   border-radius: 4px;
+//   padding: 1rem;
+//   color: #414141;
+//   display: block;
+// }
+// #noetListCreation {
+//   padding-bottom: 3rem;
+//   border-bottom: #8b8b8b solid 2px;
+// }
 // .task-list {
-//   font-size: 1.2rem;
+//   font-size: 1.5rem;
 //   line-height: 1.7;
 //   list-style: circle;
 //   padding-left: 1.1em;
 // }
+
 // .list-name {
 //   cursor: pointer;
 //   &:hover {
@@ -52,36 +152,37 @@
 //   padding: 0;
 //   color: inherit;
 // }
-// .btn.list {
+
+// .btn {
 //   font-size: 1.5rem;
-//   font-weight: 900;
-//   margin-right: 0.25em;
-//   transition: opacity 250ms ease-in;
-//   &:hover {
-//     opacity: 0.7;
-//   }
+//   // margin: 5px;
+//   color: #fff;
+//   background-color: #00bfa5;
+//   padding: 0 6px 0 6px;
+//   border-radius: 4px;
 // }
+// // .btn.list {
+// //   font-size: 3rem;
+// //   font-weight: 900;
+// //   margin-right: 0.25em;
+// //   transition: opacity 250ms ease-in;
+// //   &:hover {
+// //     opacity: 0.7;
+// //   }
+// // }
 
 // .new {
-//   background: transparent;
+//   background: #e3f2fd;
 //   border: 0;
+//   border-radius: 4px;
 //   color: inherit;
-//   border-bottom: 1px solid #000;
+//   border-bottom: 1px solid #00bfa5;
 //   font-size: inherit;
 //   outline: none;
+//   margin-top: 1.5rem;
+//   padding: 6px;
+
 //   transition: border-bottom 150ms ease-in;
-//   .list {
-//     font-size: 1.1em;
-//   }
-// }
-// .new-taks-creator {
-//   .btn {
-//     color: maroon;
-//   }
-// }
-// .new-task {
-//   margin-bottom: 0;
-//   color: red;
 // }
 // .new:focus {
 //   border-bottom-width: 3px;
@@ -89,290 +190,149 @@
 // .new:focus::placeholder {
 //   opacity: 0.2;
 // }
+// //  note creation---------------
 
-// .todo-list {
-//   --spacer: 2rem;
-
-//   grid-area: active;
-//   background: #ccc;
-//   color: #f4f4f4;
-//   width: 500px;
-//   border-radius: 4px;
-// }
-
-// .todo-header {
-//   border-radius: 4px 4px 0 0;
-//   padding: var(--spacer);
-//   background: rgba(128, 0, 0, 0.74);
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// }
-// .list-title {
-//   margin: 0 1rem 0 0;
-// }
-// .task-count {
-//   margin: 0;
-//   font-size: 1rem;
-// }
-// .todo-body {
-//   padding: var(--spacer);
-//   color: #000;
-//   line-height: 1.8rem;
+// .note {
+//   max-width: 25rem;
+//   height: 100%;
+//   font-size: 1.4rem;
+//   background: #fff;
+//   border-radius: 0.4rem;
+//   padding: 1.2rem 1.6rem;
+//   margin: 2.4rem 2.4rem 0 0;
+//   box-shadow: 0 0.9rem 1.2rem rgba(0, 0, 0, 0.1);
 //   position: relative;
 // }
-// [type="checkbox"] {
-//   opacity: 0;
+
+// .note span {
 //   position: absolute;
+//   width: 2rem;
+//   height: 2rem;
+//   top: 0.2rem;
+//   right: 0.2rem;
+//   border-radius: 0.4rem;
+//   color: #999;
+//   text-align: center;
 // }
 
-// .task label {
-//   display: inline-flex;
-//   position: relative;
-//   align-items: center;
-//   margin-bottom: 1.5em;
-// }
-// .task::after {
-//   content: "";
-//   position: absolute;
-//   right: 0;
-//   left: 0;
-//   bottom: -0.5em;
-//   height: 1px;
-//   background: maroon;
-//   opacity: 0.1;
-// }
-// .task {
-//   position: relative;
-//   margin-bottom: 1.25em;
-// }
-
-// .new-list {
-//   padding: 0.25em;
-// }
-// .custome-checkbox {
-//   display: inline-block;
-//   width: 0.65em;
-//   height: 0.65em;
+// .note span:hover {
+//   color: #333;
+//   background: #f5f5f5;
 //   cursor: pointer;
-//   border: 2px solid #000;
-//   border-radius: 50%;
-//   margin-right: 0.65em;
-//   transform: scale(1);
-//   transition: transform 200ms ease-in-out;
 // }
-// .task:hover .custome-checkbox,
-// [type="checkbox"]:focus + label .custome-checkbox {
-//   transform: scale(1.2);
-//   background-color: rgba(128, 0, 0, 0.1);
-// }
-// [type="checkbox"]:checked + label .custome-checkbox {
-//   background: maroon;
-//   border-color: maroon;
-//   // box-shadow: inset 0 0 0 0.5px rgb(255, 0, 0);
-// }
-// [type="checkbox"]:checked + label {
-//   opacity: 0.5;
+// .note-text {
+//   height: 100%;
+//   overflow-y: auto;
 // }
 
-// .task label::after {
+// .note::after {
 //   content: "";
 //   position: absolute;
+//   bottom: 0;
+//   left: 0;
 //   right: 0;
-//   left: 0;
-//   top: 45%;
-//   height: 2px;
-//   background: rgb(0, 0, 0);
-//   transform: scaleX(0);
-//   transition: transform 250ms ease-in-out;
-//   transform-origin: right;
+//   height: 0.8rem;
+//   border-radius: 0 0 0.4rem 0.4rem;
 // }
-// [type="checkbox"]:checked + label::after {
-//   transform: scaleX(1);
-//   transform-origin: left;
-// }
-
-// .delete-stuff {
+// #notes {
 //   display: flex;
-//   justify-content: space-evenly;
-//   position: absolute;
-//   width: 100%;
-//   left: 0;
-//   bottom: -35px;
-//   color: red;
+//   flex-wrap: wrap;
+//   padding-top: 2rem;
+// }
 
-//   .btn {
-//     font-weight: 700;
-//     letter-spacing: 1px;
-//     opacity: 0.7;
-//     font-size: 1em;
-//     transition: color 200ms;
-//     &:hover {
-//       color: yellow;
+// // ---------------------------LST
+
+// // #tasker-body {
+
+// //   .task {
+// //     margin-top: 5px;
+// //     padding: 3px;
+// //     border-radius: 4px;
+// //     color: #fff;
+// //     font-weight: 600;
+
+// //     // padding: 1rem;
+// //     background-color: #00bfa5;
+// //     &:hover > button {
+// //       opacity: 1;
+// //     }
+
+// //     &.completed {
+// //       color: grey;
+// //       text-decoration: line-through;
+// //     }
+// //   }
+// // }
+
+// %transition {
+//   transition: all 0.2s ease;
+//   -webkit-transition: all 0.2s ease;
+// }
+
+// #tasker-body {
+//   .task {
+//     margin-top: 5px;
+//     padding: 3px;
+//     border-radius: 4px;
+//     color: #fff;
+//     font-weight: 600;
+//     position: relative;
+//     font-size: 0.8rem;
+//     // display: block;
+//     // padding: 14px 40px 14px 14px;
+//     // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+//     background-color: #00bfa5;
+//     &:last-child {
+//       border-bottom: none;
+//     }
+
+//     &:hover > button {
+//       opacity: 1;
+//     }
+
+//     &.completed {
+//       color: grey;
+//       text-decoration: line-through;
+//     }
+
+//     input {
+//       margin-right: 10px;
+//     }
+
+//     button {
+//       @extend %transition;
+//       margin: 0 auto;
+//       color: grey;
+//       // margin: 14px;
+//       // position: absolute;
+//       // top: 0;
+//       right: 10;
+//       opacity: 0;
+//       &:hover {
+//         color: #ed1c24;
+//       }
 //     }
 //   }
 // }
 
-// // 51 min https://youtube.com/watch?v=IhmSidOJSeE&t=1890s
-// #noteTaking {
-//   // text-align: center;
-//   // display: flex;
-//   // flex-direction: column;
-// }
-// #formAddButton {
-//   width: 6rem;
-//   height: 2rem;
-//   background-color: #8902ff;
-//   color: #fff;
-//   border-radius: 0.4rem;
-//   border: 0;
-
-//   transition: background-color 0.2s ease-in-out;
-//   -webkit-transition: background-color 0.2s ease-in-out;
-// }
-
-// #formAddButton:hover {
-//   cursor: pointer;
-//   background-color: #e600e6;
-// }
-
-// #formColor {
-//   margin: 1em;
-//   width: 100px;
-//   // float: left;
-// }
+//--------------------
+:root {
+  --clr-primary: rgb(54, 112, 199);
+  --clr-light: #f4f4f4;
+  --clr-dark: #333;
+  --clr-warning: rgb(99, 36, 36);
+}
 
 body {
   margin: 0;
-  padding: 0;
-}
-p {
-  margin-bottom: 0;
-}
-#container {
-  // background-color: #f4f4f4;
-  height: 100vh;
-  margin: 0 10% 0 10%;
-  letter-spacing: 0.3em;
-  h1 {
-    font-size: 3.5rem;
-    text-align: center;
-    font-weight: 400;
-    margin: 0 0 1em 0;
-    padding: 5px;
-    color: #414141;
-  }
-}
-hr {
-  border: rgb(156, 156, 156) 0.5px solid;
-}
-
-#noetListCreation {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  display: flex;
-  justify-content: space-around;
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin: 0;
-    // color: #f4f4f4;
-  }
-}
-
-.createNote {
-  text-align: center;
-  #formColor {
-    font-size: 1.2rem;
-    border: none;
-    option {
-      border: none;
-    }
-  }
-  #formAddButton {
-    cursor: pointer;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 4px;
-    margin-top: 0.5em;
-    padding: 0.5em;
-    background-color: #26a69a;
-    color: #fff;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    transition: 500ms;
-    &:hover {
-      background-color: #09e4ce;
-      transition: 500ms;
-    }
-  }
-  #formNoteText {
-    border: 2px solid #f4f4f4;
-    border-radius: 4px;
-    transition: 500ms;
-    &:hover {
-      box-shadow: 1px 1px 10px 1px rgba(51, 51, 51, 0.568);
-      transition: 500ms;
-    }
-    outline: none;
-    resize: none;
-  }
-}
-textarea::placeholder {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
   font-size: 1.5rem;
-  color: rgb(156, 154, 154);
+  background-color: var(--clr-primary);
 }
 
-// -------------------------------
-.createList {
-  background-color: #90caf9;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 1rem 4rem 4rem 4rem;
-  border-radius: 4px;
-  color: #414141;
-  ul {
-    margin: 0;
-    padding: 0;
-    li {
-      list-style: none;
-    }
-  }
-  .input {
-    border: none;
-    border-radius: 4px;
-    background-color: #daedfd;
-    outline: none;
-    transition: border-bottom 150ms ease-in;
-    font-size: 1.1em;
-    padding: 0.2em;
-  }
-  .bttn {
-    border-radius: 4px;
-    border: 0;
-    padding: 0.5em;
-    letter-spacing: 3px;
-    margin: 0.2em;
-    font-weight: 600;
-    color: #fff;
-    background-color: #44abff;
-  }
-}
-
-.createNote {
-  background-color: #e0f2f1;
-  border-radius: 4px;
-  padding: 1rem;
-  color: #414141;
-  display: block;
-}
-#noetListCreation {
-  padding-bottom: 3rem;
-  border-bottom: #8b8b8b solid 2px;
-}
 .task-list {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   list-style: circle;
   padding-left: 1.1em;
@@ -380,12 +340,14 @@ textarea::placeholder {
 
 .list-name {
   cursor: pointer;
-  &:hover {
-    opacity: 0.7;
-  }
 }
-.active-list {
-  font-weight: 700;
+
+.list-name:hover {
+  opacity: 0.7;
+}
+
+form {
+  display: flex;
 }
 
 .btn {
@@ -396,88 +358,179 @@ textarea::placeholder {
   color: inherit;
 }
 
-.btn {
+.btn.create {
   font-size: 1.5rem;
-  // margin: 5px;
-  color: #fff;
-  background-color: #00bfa5;
-  padding: 0 6px 0 6px;
-  border-radius: 4px;
+  font-weight: 900;
+  margin-right: 0.25em;
+  transition: opacity 250ms ease-in;
 }
-// .btn.list {
-//   font-size: 3rem;
-//   font-weight: 900;
-//   margin-right: 0.25em;
-//   transition: opacity 250ms ease-in;
-//   &:hover {
-//     opacity: 0.7;
-//   }
-// }
+
+.btn.create:hover {
+  opacity: 0.7;
+}
+
+.btn.delete {
+  opacity: 0.7;
+  font-size: 1rem;
+  transition: color 200ms;
+}
+
+.btn.delete:hover {
+  color: var(--clr-warning);
+}
 
 .new {
-  background: #e3f2fd;
+  background: transparent;
   border: 0;
-  border-radius: 4px;
   color: inherit;
-  border-bottom: 1px solid #00bfa5;
+  border-bottom: 1px solid currentColor;
   font-size: inherit;
   outline: none;
-  margin-top: 1.5rem;
-  padding: 6px;
+  padding: 0.25em;
 
   transition: border-bottom 150ms ease-in;
+  order: 2;
 }
+
+.new::placeholder {
+  opacity: 0.4;
+}
+
 .new:focus {
   border-bottom-width: 3px;
 }
-.new:focus::placeholder {
-  opacity: 0.5;
-}
-//  note creation---------------
 
-.note {
-  max-width: 25rem;
-  height: 100%;
-  font-size: 1.4rem;
-  background: #fff;
-  border-radius: 0.4rem;
-  padding: 1.2rem 1.6rem;
-  margin: 2.4rem 2.4rem 0 0;
-  box-shadow: 0 0.9rem 1.2rem rgba(0, 0, 0, 0.1);
+.new:focus::placeholder {
+  opacity: 0.15;
+}
+
+.new.list {
+  font-size: 1.1rem;
+}
+
+.new.task {
+  margin-bottom: 0;
+}
+
+.active-list {
+  font-weight: 700;
+}
+
+.todo-list {
+  --spacer: 2rem;
+
+  grid-area: active;
+  background: var(--clr-light);
+  color: var(--clr-dark);
+}
+
+.todo-header {
+  padding: var(--spacer);
+  background: #e4e4e4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-title {
+  margin: 0 1em 0 0;
+}
+
+.task-count {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.todo-body {
+  padding: var(--spacer);
   position: relative;
 }
 
-.note span {
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  top: 0.2rem;
-  right: 0.2rem;
-  border-radius: 0.4rem;
-  color: #999;
-  text-align: center;
-}
-.note span:hover {
-  color: #333;
-  background: #f5f5f5;
-  cursor: pointer;
-}
-.note-text {
-  height: 100%;
-  overflow-y: auto;
+.new-task-creator .create {
+  color: var(--clr-primary);
 }
 
-.note::after {
+[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.task label {
+  display: flex-inline;
+  align-items: center;
+  position: relative;
+}
+
+.task {
+  position: relative;
+  margin-bottom: 1.25em;
+}
+
+.task::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  right: 0;
+  left: 0;
+  bottom: -0.5em;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.1;
+}
+
+.custom-checkbox {
+  --size: 0.75em;
+  display: inline-block;
+  width: var(--size);
+  height: var(--size);
+  margin-right: var(--size);
+  cursor: pointer;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+}
+
+.task:hover .custom-checkbox,
+[type="checkbox"]:focus + label .custom-checkbox {
+  transform: scale(1.2);
+  color: var(--clr-primary);
+}
+
+[type="checkbox"]:checked + label .custom-checkbox {
+  background: var(--clr-primary);
+  border-color: var(--clr-primary);
+  box-shadow: inset 0 0 0px 2px white;
+}
+
+[type="checkbox"]:checked + label {
+  opacity: 0.5;
+}
+
+.task label::after {
+  content: "";
+  position: absolute;
   left: 0;
   right: 0;
-  height: 0.8rem;
-  border-radius: 0 0 0.4rem 0.4rem;
+  left: 1.5em;
+  top: 50%;
+  height: 3px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 150ms ease-in-out;
 }
-#notes {
+
+[type="checkbox"]:checked + label::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.delete-stuff {
   display: flex;
-  flex-wrap: wrap;
-  padding-top: 2rem;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -35px;
+  color: var(--clr-light);
 }

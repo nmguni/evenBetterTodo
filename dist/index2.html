@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <title>test</title>
   </head>
@@ -13,12 +17,20 @@
       <div id="noetListCreation">
         <div class="createList">
           <h2>List</h2>
-          <input type="text" placeholder="Enter Task" class="new list" />
-          <button class="btn">+</button>
+          <input
+            type="text"
+            placeholder="Enter Task"
+            class="new list"
+            id="input-task"
+          />
+          <button id="add-task-btn" class="btn">+</button>
+          <div id="tasker-body">
+            <ul id="tasks"></ul>
+          </div>
         </div>
         <!-- ----------- -->
         <div class="createNote">
-          <h2>Take A Note</h2>
+          <h2>NOTE</h2>
           <form id="noteForm">
             <textarea
               placeholder="Type Here!"
@@ -29,13 +41,6 @@
               maxlength="300"
             ></textarea>
             <br />
-            <!-- <select name="formColor" id="formColor">
-              <option value="none">Select color</option>
-              <option value="red">Red</option>
-              <option value="green">Green</option>
-              <option value="blue">Blue</option>
-              <option value="yellow">Yellow</option>
-            </select> -->
             <button id="formAddButton">Add note</button>
           </form>
         </div>
